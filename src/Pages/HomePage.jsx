@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar'
 import {MdKeyboardArrowRight} from 'react-icons/md'
 import {faq} from '../faq'
 import {BsPlusLg} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 const HomePage = () => {
   const [show, setShow] = useState(null);
@@ -120,7 +121,46 @@ const HomePage = () => {
               </div>
             ))
           }
+          <div>
+            <h1 className='text-center mt-[50px] mb-[20px]   font-semibold text-[0.95rem] md:text-[1.1rem]'>Ready to watch? Enter your email to create or restart your membership</h1>
+            <div className='flex flex-col w-full items-center md:items-center gap-3 md:flex-row justify-center'>
+              <input type="email" placeholder='Email address' className='w-[70%] text-white min-w-[200px] max-w-[500px]
+               py-3 px-3 text-[1.2rem] rounded bg-transparent border-[1px] backdrop-blur-sm' />
+              <button className='flex items-center text-[1.2rem]  bg-[#e50914] text-white py-3 px-5 gap-2 rounded cursor-pointer'>Get Started <MdKeyboardArrowRight size={30}/></button>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className='w-full h-[10px] bg-gray-700'></div>
+      <div className='w-[100%] text-white bg-black'> 
+      <div className='max-w-[1280px] mx-auto px-6'>
+      <h3 className='pt-8'>Question? call 000-800-996-2025</h3>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3'>
+        <div>
+          <li className='list-none underline'>FAQ</li>
+          <li className='list-none underline'>Medical centre</li>
+          <li className='list-none underline'>Ways to watch</li>
+          <li className='list-none underline'>Cookie Preference</li>
+          <li className='list-none underline'>Speed Test</li>
+        </div>
+        <div>
+        <li className='list-none underline'>FAQ</li>
+          <li className='list-none underline'>Medical centre</li>
+          <li className='list-none underline'>Ways to watch</li>
+          <li className='list-none underline'>Cookie Preference</li>
+          <li className='list-none underline'>Speed Test</li>
+        </div>
+        <div>
+        <li className='list-none underline'>FAQ</li>
+          <li className='list-none underline'>Medical centre</li>
+          <li className='list-none underline'>Ways to watch</li>
+          <li className='list-none underline'>Cookie Preference</li>
+          <li className='list-none underline'>Speed Test</li>
+        </div>
+      </div>
+      <h3 className='mt-[40px] text-[#e50914] text-xl'>Filmada Worldwide</h3>
+      <h4 className='font-bold'><Link to="https://github.com/Satyaaam">-by Mr. Satyam Raj <span className='text-[#e50914]'>.</span></Link></h4>
+      </div>
       </div>
 
     </div>
