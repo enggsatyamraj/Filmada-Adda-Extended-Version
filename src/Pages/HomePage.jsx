@@ -114,7 +114,7 @@ const HomePage = () => {
                 onClick={()=>{show === index ? setShow(null) : setShow(index)}}>
                   <span>{item.question}</span>
                   {console.log(index)}
-                  <BsPlusLg/>
+                  <BsPlusLg className={show === index ? 'rotate-[45deg] duration-300': 'rotate-[0deg] duration-300' }/>
                   </h1>
                 <p className={index === show ? 'bg-[#2d2d2d] py-3 text-[1rem] md:text-[1rem] px-4  duration-700' : 'bg-[#2d2d2d] py-3 text-[1rem] md:text-[1rem] px-4 hidden'}>{item.answer}</p>
               </div>
