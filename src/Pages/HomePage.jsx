@@ -29,9 +29,9 @@ const HomePage = () => {
       <div className='w-full h-[10px] bg-gray-700'></div>
       <div className='bg-black w-[100%] md:h-[100vh] h-fit max-w-[1280px]'>
         <div className='text-white flex flex-col md:flex-row items-center justify-center w-[100%] md:h-[100%] h-fit px-6 py-[40px]'>
-          <div className='flex-1'>
+          <div className='flex-1 flex flex-col justify-center items-start'>
             <h1 className='text-center md:text-left font-bold text-4xl mb-[20px] md:text-5xl'>Enjoy on your <span className='text-[#e50914]'>TV</span></h1>
-            <p className='text-center text-[1.2rem] md:text-left'>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple Tv, Blu-ray players and more.
+            <p className='text-center text-[1.2rem] md:text-left md:w-[90%]'>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple Tv, Blu-ray players and more.
             </p>
           </div>
           <div className='flex items-center justify-center flex-1'>
@@ -50,7 +50,7 @@ const HomePage = () => {
                 <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" className='w-[40px]' alt="" />
                 <div>
                   <h1 className='font-bold text-[1rem]'>Stranger Things</h1>
-                  <h3 className='text-[0.75rem]'>Downloading...</h3>
+                  <h3 className='text-[0.75rem]  text-[#0062cb] font-semibold cursor-pointer'>Downloading...</h3>
                 </div>
               </div>
               <div className='flex items-center justify-between'>
@@ -85,15 +85,15 @@ const HomePage = () => {
       </div>
       <div className='w-full h-[10px] bg-gray-700'></div>
       <div className='bg-black w-[100%] md:h-[100vh] h-fit max-w-[1280px]'>
-        <div className='text-white flex flex-col md:flex-row items-center justify-center w-[100%] md:h-[100%] h-fit px-6 py-[40px]'>
+        <div className='text-white flex md:flex-row items-center justify-center w-[100%] md:h-[100%] h-fit px-6 py-[40px]'>
+        <div className='flex items-center justify-center flex-1'>
+            <img src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" className='md:w-[80%] w-[90%]' alt=""/>
+          </div>
           <div className='flex-1'>
             <h1 className='text-center md:text-left font-bold text-4xl mb-[20px] md:text-5xl'>Create Profile for<span className='text-[#e50914]'> Kids </span></h1>
             <p className='text-center text-[1.2rem] md:text-left md:w-[80%]'>
             Send children on adventures with their favourite characters in a space made just for them—free with your membership.
             </p>
-          </div>
-          <div className='flex items-center justify-center flex-1'>
-            <img src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" className='md:w-[80%] w-[90%]' alt=""/>
           </div>
         </div>
       </div>
