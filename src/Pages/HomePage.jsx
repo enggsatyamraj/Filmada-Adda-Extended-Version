@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from '../components/NavBar'
 import {MdKeyboardArrowRight} from 'react-icons/md'
+import {faq} from '../faq'
+import {BsPlusLg} from 'react-icons/bs'
 
 const HomePage = () => {
+  const [show, setShow] = useState(null);
+
+  
+
   return (
     <div>
       <div className="w-full max-w-[1280px] object-cover bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/d282a426-b01a-424c-9b83-2c2445e4b61a/f7eb3bc2-2867-4c7e-94f8-e62ec11175cd/IN-en-20230626-popsignuptwoweeks-perspective_alpha_website_small.jpg')]">
@@ -95,6 +101,25 @@ const HomePage = () => {
             Send children on adventures with their favourite characters in a space made just for them—free with your membership.
             </p>
           </div>
+        </div>
+      </div>
+      <div className='w-full h-[10px] bg-gray-700'></div>
+      <div className='bg-black w-full py-8 px-6'>
+        <div className='max-w-[1280px] text-white'>
+          <h2 className='text-3xl md:text-5xl font-bold text-center mb-[40px]'>Frequently Asked Questions</h2>
+          {
+            faq.map((item, index)=>(
+              <div key={index} className='mb-4 w-[100%] md:w-[60%] mx-auto lg:[50%]'>
+                <h1 className='bg-[#2d2d2d] py-3 flex items-center justify-between cursor-pointer text-[1.1rem] md:text-[1.2rem] mb-1 px-4'
+                onClick={()=>{show === index ? setShow(null) : setShow(index)}}>
+                  <span>{item.question}</span>
+                  {console.log(index)}
+                  <BsPlusLg/>
+                  </h1>
+                <p className={index === show ? 'bg-[#2d2d2d] py-3 text-[1rem] md:text-[1rem] px-4  duration-700' : 'bg-[#2d2d2d] py-3 text-[1rem] md:text-[1rem] px-4 hidden'}>{item.answer}</p>
+              </div>
+            ))
+          }
         </div>
       </div>
 
