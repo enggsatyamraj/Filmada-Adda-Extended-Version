@@ -9,15 +9,15 @@ const NavBar = () => {
     <div className='w-full px-4 py-4 transparent'>
         <div className='max-w-[1280px] flex items-center justify-between'>
             <div className='flex gap-2'>
-                <BsFillCameraReelsFill size={30} className='text-[#e50914]'/>
-                <span className='font-bold text-3xl text-[#e50914]'>Filmada Adda.</span>
+                <BsFillCameraReelsFill size={30} className='text-[#fff]'/>
+                <span className='font-bold text-3xl text-[#fff]'>Filmada Adda.</span>
             </div>
             <div className='flex gap-5 items-center justify-center'>
                 <Link to="/signup">
                     <button className='text-white bg-[#e50914] border-none px-3 py-1 rounded-lg font-semibold'>Sign Up</button>
                 </Link>
                 <Link to="/newuser">
-                    <button className='font-semibold border-black border-[2px] px-3 py-1 rounded-lg'>New User</button>
+                    <button className='font-semibold border-White border-[2px] px-3 py-1 rounded-lg text-white'>New User</button>
                 </Link>
             </div>
         </div>
