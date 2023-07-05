@@ -27,8 +27,8 @@ const HomePage = () => {
         </div>
       </div>
       <div className='w-full h-[10px] bg-gray-700'></div>
-      <div className='bg-black w-[100%] h-[100vh] max-w-[1280px]'>
-        <div className='text-white flex flex-col md:flex-row items-center justify-center w-[100%] h-[100%] px-6'>
+      <div className='bg-black w-[100%] md:h-[100vh] h-fit max-w-[1280px]'>
+        <div className='text-white flex flex-col md:flex-row items-center justify-center w-[100%] md:h-[100%] h-fit px-6 py-[40px]'>
           <div className='flex-1'>
             <h1 className='text-center md:text-left font-bold text-4xl mb-[20px] md:text-5xl'>Enjoy on your <span className='text-[#e50914]'>TV</span></h1>
             <p className='text-center text-[1.2rem] md:text-left'>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple Tv, Blu-ray players and more.
