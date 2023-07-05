@@ -135,7 +135,7 @@ const HomePage = () => {
       <div className='w-[100%] text-white bg-black'> 
       <div className='max-w-[1280px] mx-auto px-6'>
       <h3 className='pt-8'>Question? call 000-800-996-2025</h3>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-5'>
         <div>
           <li className='list-none underline'>FAQ</li>
           <li className='list-none underline'>Medical centre</li>
