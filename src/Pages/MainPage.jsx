@@ -13,7 +13,7 @@ const MainPage = () => {
                 <span className='font-bold text-[1.25rem] md:text-3xl text-[#fff] mt-[5px]'>Filmada
                  <span className='text-[#e50914]'> Adda.</span> </span>
             </div>
-            <div className='flex items-center gap-2 text-[0.85rem] mt-3 font-semibold md:text-[1rem]'>
+            <div className='flex items-center gap-2 text-[0.85rem] mt-2 font-semibold md:text-[1rem]'>
               <li className='list-none cursor-pointer'>Home</li>
               <li className='list-none cursor-pointer'>TV Shows</li>
               <li className='list-none cursor-pointer'>Movies</li>
