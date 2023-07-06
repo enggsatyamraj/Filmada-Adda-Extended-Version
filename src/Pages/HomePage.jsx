@@ -12,7 +12,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="w-full max-w-[1280px] object-cover bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/d282a426-b01a-424c-9b83-2c2445e4b61a/f7eb3bc2-2867-4c7e-94f8-e62ec11175cd/IN-en-20230626-popsignuptwoweeks-perspective_alpha_website_small.jpg')]">
+      <div className="w-full object-cover bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/d282a426-b01a-424c-9b83-2c2445e4b61a/f7eb3bc2-2867-4c7e-94f8-e62ec11175cd/IN-en-20230626-popsignuptwoweeks-perspective_alpha_website_small.jpg')]">
         <div className='w-[100%] h-[100%]  bg-gradient-to-b from-[#232323] via-transparent to-[#232323]'>
           <NavBar/>
           <div className='w-100%  md:h-[100vh] px-1 md:px-2 pt-[60px] md:pt-0 pb-[60px] md:pb-0 h-fit  flex items-center justify-center flex-col'>
@@ -34,7 +34,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className='w-full h-[10px] bg-gray-700'></div>
-      <div className='bg-black w-[100%] md:h-[100vh] h-fit max-w-[1280px]'>
+      <div className='bg-black w-[100%] md:h-[100vh] h-fit '>
         <div className='text-white flex flex-col md:flex-row items-center justify-center w-[100%] md:h-[100%] h-fit px-6 py-[40px]'>
           <div className='flex-1 flex flex-col justify-center items-center md:items-start'>
             <h1 className='text-center md:text-left font-bold text-4xl mb-[20px] md:text-5xl'>Enjoy on your <span className='text-[#e50914]'>TV</span></h1>
@@ -47,7 +47,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className='w-full h-[10px] bg-gray-700'></div>
-      <div className='bg-black w-[100%] md:h-[100vh] h-fit max-w-[1280px]'>
+      <div className='bg-black w-[100%] md:h-[100vh] h-fit '>
         <div className='text-white flex flex-col md:flex-row items-center justify-center w-[100%] md:h-[100%] h-fit px-6 py-[40px]'>
           <div className='flex flex-col items-center justify-center flex-1 relative'>
             <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" className='md:w-[80%] w-[90%]' alt="" />
@@ -77,7 +77,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className='w-full h-[10px] bg-gray-700'></div>
-      <div className='bg-black w-[100%] md:h-[100vh] h-fit max-w-[1280px]'>
+      <div className='bg-black w-[100%] md:h-[100vh] h-fit '>
         <div className='text-white flex flex-col md:flex-row items-center justify-center w-[100%] md:h-[100%] h-fit px-6 py-[40px]'>
           <div className='flex-1'>
             <h1 className='text-center md:text-left font-bold text-4xl mb-[20px] md:text-5xl'><span className='text-[#e50914]'>Watch </span>everywhere</h1>
@@ -91,7 +91,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className='w-full h-[10px] bg-gray-700'></div>
-      <div className='bg-black w-[100%] md:h-[100vh] h-fit max-w-[1280px]'>
+      <div className='bg-black w-[100%] md:h-[100vh] h-fit'>
         <div className='text-white flex flex-col md:flex-row items-center justify-center w-[100%] md:h-[100%] h-fit px-6 py-[40px]'>
         <div className='flex items-center justify-center flex-1'>
             <img src="https://occ-0-2087-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" className='md:w-[80%] w-[90%]' alt=""/>
@@ -106,7 +106,7 @@ const HomePage = () => {
       </div>
       <div className='w-full h-[10px] bg-gray-700'></div>
       <div className='bg-black w-full py-8 px-6'>
-        <div className='max-w-[1280px] text-white'>
+        <div className=' text-white'>
           <h2 className='text-3xl md:text-5xl font-bold text-center mb-[40px]'>Frequently Asked Questions</h2>
           {
             faq.map((item, index)=>(
@@ -121,7 +121,7 @@ const HomePage = () => {
               </div>
             ))
           }
-          <div>
+          <div className=''>
             <h1 className='text-center mt-[50px] mb-[20px]   font-semibold text-[0.95rem] md:text-[1.1rem]'>Ready to watch? Enter your email to create or restart your membership</h1>
             <div className='flex flex-col w-full items-center md:items-center gap-3 md:flex-row justify-center'>
               <input type="email" placeholder='Email address' className='w-[70%] text-white min-w-[200px] max-w-[500px]
@@ -133,9 +133,9 @@ const HomePage = () => {
       </div>
       <div className='w-full h-[10px] bg-gray-700'></div>
       <div className='w-[100%] text-white bg-black'> 
-      <div className='max-w-[1280px] mx-auto px-6'>
+      <div className='w-fit mx-auto px-6'>
       <h3 className='pt-8'>Question? call 000-800-996-2025</h3>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-5'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-[40px] md:gap-[60px] lg:gap-[100px] mt-5'>
         <div>
           <li className='list-none underline'>FAQ</li>
           <li className='list-none underline'>Medical centre</li>
