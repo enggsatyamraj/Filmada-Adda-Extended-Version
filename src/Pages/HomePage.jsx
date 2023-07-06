@@ -144,18 +144,18 @@ const HomePage = () => {
           <li className='list-none underline'>Speed Test</li>
         </div>
         <div>
-        <li className='list-none underline'>FAQ</li>
-          <li className='list-none underline'>Medical centre</li>
-          <li className='list-none underline'>Ways to watch</li>
-          <li className='list-none underline'>Cookie Preference</li>
-          <li className='list-none underline'>Speed Test</li>
+        <li className='list-none underline'>Help Center</li>
+          <li className='list-none underline'>Investor Relation</li>
+          <li className='list-none underline'>Terms of use</li>
+          <li className='list-none underline'>Corporate Information</li>
+          <li className='list-none underline'>Legal Notices</li>
         </div>
         <div>
-        <li className='list-none underline'>FAQ</li>
-          <li className='list-none underline'>Medical centre</li>
-          <li className='list-none underline'>Ways to watch</li>
-          <li className='list-none underline'>Cookie Preference</li>
-          <li className='list-none underline'>Speed Test</li>
+        <li className='list-none underline'>Account</li>
+          <li className='list-none underline'>Jobs</li>
+          <li className='list-none underline'>Privacy</li>
+          <li className='list-none underline'>Contact Us</li>
+          <li className='list-none underline'>Only on Netflix</li>
         </div>
       </div>
       <h3 className='mt-[40px] text-[#e50914] text-xl'>Filmada Worldwide</h3>
