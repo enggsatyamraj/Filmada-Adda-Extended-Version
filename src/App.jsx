@@ -1,21 +1,22 @@
 import React from 'react'
-import NavBar from './components/NavBar'
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import HomePage from './Pages/HomePage'
-import SignUpPage from './Pages/SignUpPage'
-import NewUserPage from './Pages/NewUserPage'
 import MainPage from './Pages/MainPage'
+import TvShow from './pages/TvShow'
+import Movie from './pages/Movie'
+import NewNavbar from './components/NewNavbar'
 
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <NewNavbar/>
       <Routes>
-        <Route path="/" element={<MainPage/>}/>
-        <Route path="/homepage" element={<HomePage/>}/>
-        <Route path="/signup" element={<SignUpPage/>}/>
-        <Route path="/newuser" element={<NewUserPage/>}/>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/main" element={<MainPage/>}/>
+        <Route path="/tvshows" element={<TvShow/>}/>
+        <Route path="/movies" element={<Movie/>}/>
       </Routes>
       </BrowserRouter>
     </div>

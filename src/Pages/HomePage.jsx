@@ -4,6 +4,7 @@ import {MdKeyboardArrowRight} from 'react-icons/md'
 import {faq} from '../faq'
 import {BsPlusLg} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import NewNavbar from '../components/NewNavbar'
 
 const HomePage = () => {
   const [show, setShow] = useState(null);
@@ -14,7 +15,7 @@ const HomePage = () => {
     <div>
       <div className="w-full object-cover bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/d282a426-b01a-424c-9b83-2c2445e4b61a/f7eb3bc2-2867-4c7e-94f8-e62ec11175cd/IN-en-20230626-popsignuptwoweeks-perspective_alpha_website_small.jpg')]">
         <div className='w-[100%] h-[100%]  bg-gradient-to-b from-[#232323] via-transparent to-[#232323]'>
-          <NavBar/>
+          {/* <NewNavbar/> */}
           <div className='w-100%  md:h-[100vh] px-1 md:px-2 pt-[60px] md:pt-0 pb-[60px] md:pb-0 h-fit  flex items-center justify-center flex-col'>
             <h1 className='text-white font-bold text-[2.1rem] md:text-5xl mb-[20px] text-center'>
               Unlimited movies, TV shows and more..
