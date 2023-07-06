@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import HomePage from './Pages/HomePage'
 import MainPage from './Pages/MainPage'
-import Movie from './pages/Movie'
+import Movie from './Pages/Movie'
 import Tv from './Pages/Tv'
 import NewNavbar from './components/NewNavbar'
 
