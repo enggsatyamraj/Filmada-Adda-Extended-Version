@@ -6,8 +6,8 @@ import '../App.css'
 
 const NavBar = () => {
   return (
-    <div className='w-full px-4 py-4 transparent'>
-        <div className='max-w-[1280px] flex items-center justify-between'>
+    <div className=' px-4 py-4 flex items-center transparent'>
+        <div className=' flex w-[100%] mx-auto max-w-[1280px] items-center justify-between'>
             <div className='flex gap-2 items-center'>
                 <div>
                 <BsFillCameraReelsFill className='text-[#fff]  text-xl md:text-2xl'/>
