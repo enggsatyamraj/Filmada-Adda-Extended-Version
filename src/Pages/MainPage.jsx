@@ -5,7 +5,7 @@ import {BsFillCameraReelsFill} from 'react-icons/bs'
 const MainPage = () => {
   return (
     <div className=' px-4 py-4 flex items-center transparent'>
-        <div className=' flex w-[100%] text-white mx-auto gap-3 sm:gap-4 md:gap-6 lg:gap-8 max-w-[1280px] items-baseline'>
+        <div className=' flex w-[100%] text-white mx-auto gap-3 sm:gap-4 md:gap-6 lg:gap-8 max-w-[1280px] items-center'>
             <div className='flex gap-2 items-center'>
                 <div>
                 <BsFillCameraReelsFill className='text-[#fff]  text-xl md:text-2xl'/>
