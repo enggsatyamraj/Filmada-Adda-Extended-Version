@@ -2,8 +2,8 @@ import React from 'react'
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import HomePage from './Pages/HomePage'
 import MainPage from './Pages/MainPage'
-import TvShow from './pages/TvShow'
 import Movie from './pages/Movie'
+import Tv from './Pages/Tv'
 import NewNavbar from './components/NewNavbar'
 
 
@@ -15,7 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/main" element={<MainPage/>}/>
-        <Route path="/tvshows" element={<TvShow/>}/>
+        <Route path="/tvshows" element={<Tv/>}/>
         <Route path="/movies" element={<Movie/>}/>
       </Routes>
       </BrowserRouter>
