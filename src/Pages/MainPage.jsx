@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import request from '../Request';
 import '../App.css'
+import {BsFillPlayFill} from 'react-icons/bs'
+import {AiOutlinePlus} from 'react-icons/ai'
 
 const MainPage = () => {
   
@@ -27,14 +29,36 @@ const MainPage = () => {
 
   console.log(movie)
 
+  const para = (str, num) => {
+    if(str?.length > num){
+      return str.slice(0,num)+"...";
+    }
+    else{
+      return str
+    }
+  }
+
 
   return (
     <div className='w-full bg-black'>
       <div className='max-w-[1280px] w-[100%] md:h-[100vh] h-[50%] mx-auto relative'>
       <img src={`https://image.tmdb.org/t/p/original${movie?.poster_path}`} alt={movie?.title} 
         className='w-[100%] h-[100%] object-cover'/>
-      <div className='absolute md:top-[20%] top-[30%]'>
-        <p className='text-white font-bold text-3xl'>{movie?.title}</p>
+      <div className='absolute right-0 top-0 bottom-0 left-0 bg-gradient-to-r from-black to-transparent'></div>
+      <div className='px-2 absolute md:top-[20%] top-[30%]'>
+        <p className='text-white font-bold w-[80%] text-3xl mb-3'>{movie?.title}</p>
+        <div className='flex sm-[30px] items-center gap-2'>
+          <button className='bg-white flex items-center px-4 py-1 rounded gap-1 cursor-pointer'>
+            <BsFillPlayFill/>
+            Play</button>
+          <button className='bg-gray-800 flex items-center px-4 py-1 rounded text-white gap-1 cursor-pointer'>
+            <AiOutlinePlus/>
+            My List</button>
+        </div>
+        <p className='text-white mt-6 md:mt-[40px] md:[98%]
+        sm:w-[70%] md:w-[48%]  border-black border-[2px]'>{
+          para(movie?.overview,150)
+        }</p>
       </div>
       </div>
 
