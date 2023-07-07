@@ -48,7 +48,7 @@ const Details = () => {
                         </div> */}
                         <div className='flex items-center justify-between my-2'>
                             <h3 className='text-[#A6F700]'>Ratings:{moviedetail?.vote_average}</h3>
-                            <h3 className='text-[#e50914] border-white border-[1px] px-2'>{moviedetail?.status}</h3>
+                            <h3 className='text-[#e50914] border-white rounded border-[1px] px-2'>{moviedetail?.status}</h3>
                         </div>
                         <p className='w-[98%] md:w-[70%]'>
                             {moviedetail?.overview}

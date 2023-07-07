@@ -16,8 +16,8 @@ const NewNavbar = () => {
             </div>
             <div className='flex items-center gap-2 md:gap-4 text-[0.85rem] mt-2 font-semibold md:text-[1rem]'>
               <Link to="/main"><li className='list-none cursor-pointer'>Home</li></Link>
-              <Link to="/tvshows"><li className='list-none cursor-pointer'>TV Shows</li></Link>
-              <Link to="/movies"><li className='list-none cursor-pointer'>Movies</li></Link>
+              {/* <Link to="/tvshows"><li className='list-none cursor-pointer'>TV Shows</li></Link>
+              <Link to="/movies"><li className='list-none cursor-pointer'>Movies</li></Link> */}
             </div>
         </div>
 
