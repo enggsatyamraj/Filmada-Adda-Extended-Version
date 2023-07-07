@@ -3,8 +3,12 @@ import request from '../Request';
 import '../App.css'
 import {BsFillPlayFill} from 'react-icons/bs'
 import {AiOutlinePlus} from 'react-icons/ai'
+import { Link, useParams } from 'react-router-dom';
+import {AiOutlineHeart,AiOutlineSave} from 'react-icons/ai'
 
 const MainPage = () => {
+
+  
   
   // const img_url = "https://image.tmdb.org/t/p/"
 
@@ -38,15 +42,19 @@ const MainPage = () => {
     }
   }
 
+  console.log(movies)
 
   return (
     <div className='w-full bg-black'>
-      <div className='max-w-[1280px] w-[100%] md:h-[100vh] h-[50%] mx-auto relative'>
+      <Link to={`/popularmovies/${movie?.id}`}>
+      <div className='max-w-[1280px] w-[100%] md:h-[100vh] h-[50%] mx-auto relative cursor-pointer'>
+      
       <img src={`https://image.tmdb.org/t/p/original${movie?.poster_path}`} alt={movie?.title} 
         className='w-[100%] h-[100%] object-cover'/>
+      
       <div className='absolute right-0 top-0 bottom-0 left-0 bg-gradient-to-r from-black to-transparent'></div>
-      <div className='px-2 absolute md:top-[20%] top-[30%]'>
-        <p className='text-white font-bold w-[80%] text-3xl mb-3'>{movie?.title}</p>
+      <div className='px-2 absolute md:top-[50%] top-[44%]'>
+        <p className='text-white font-bold w-[80%] text-3xl md:w-[40%]  mb-3'>{movie?.title}</p>
         <div className='flex sm-[30px] items-center gap-2'>
           <button className='bg-white flex items-center px-4 py-1 rounded gap-1 cursor-pointer'>
             <BsFillPlayFill/>
@@ -55,12 +63,38 @@ const MainPage = () => {
             <AiOutlinePlus/>
             My List</button>
         </div>
-        <p className='text-white mt-6 md:mt-[40px] md:[98%]
-        sm:w-[70%] md:w-[48%]  border-black border-[2px]'>{
+        <p className='text-gray-500 text-[0.85rem] mt-[20px]'>{movie?.release_date}</p>
+        <p className='text-white mt-6 md:mt-[20px]
+        sm:w-[70%] md:w-[48%] '>{
           para(movie?.overview,150)
         }</p>
       </div>
       </div>
+      </Link>
+      <Link to="/popularmovies">
+      <div className='px-2'>
+        <h2 className='text-white font-bold md:text-3xl text-2xl'>
+          Popular Movies
+        </h2>
+        <div className='flex flex-wrap gap-2'>
+  {
+    movies.map((m) => (
+      <Link to={`/popularmovies/${m.id}`} key={m.id}>
+        <div className='h-auto w-[200px] relative rounded overflow-hidden'>
+          <img src={`https://image.tmdb.org/t/p/original${m?.poster_path}`} alt="" className='h-full w-full object-cover' />
+          <div className='absolute top-0 right-0 left-0 bottom-0 hover:bg-black opacity-0 hover:opacity-80'>
+            <p className='text-white px-3 py-2 absolute bottom-0 font-bold'>{m.title}</p>
+            <AiOutlineHeart size={25} className='text-white absolute top-3 left-2'/>
+            <AiOutlineSave size={25} className='text-white absolute top-3 right-2'/>
+          </div>
+        </div>
+      </Link>
+    ))
+  }
+</div>
+
+      </div>
+      </Link>
 
     </div>
   )

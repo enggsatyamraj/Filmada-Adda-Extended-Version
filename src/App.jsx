@@ -5,6 +5,7 @@ import MainPage from './Pages/MainPage'
 import Movie from './Pages/Movie'
 import Tv from './Pages/Tv'
 import NewNavbar from './components/NewNavbar'
+import Details from './Pages/Details'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/main" element={<MainPage/>}/>
         <Route path="/tvshows" element={<Tv/>}/>
         <Route path="/movies" element={<Movie/>}/>
+        <Route path="/popularmovies/:id" element={<Details/>}/>
       </Routes>
       </BrowserRouter>
     </div>

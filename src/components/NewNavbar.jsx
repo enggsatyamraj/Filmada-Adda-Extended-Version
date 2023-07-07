@@ -4,7 +4,7 @@ import {BsFillCameraReelsFill} from 'react-icons/bs'
 
 const NewNavbar = () => {
   return (
-    <div className=' px-4 py-4 flex items-center z-20 fixed top-0 right-0 left-0 backdrop-filter backdrop-blur-[10px] bg-transparent'>
+    <div className=' px-4 py-4 flex items-center z-20 '>
         <div className=' flex w-[100%] text-white mx-auto gap-3 sm:gap-4 md:gap-6 lg:gap-8 max-w-[1280px] items-center'>
             <div className='flex gap-2 items-center'>
                 <div>
@@ -26,3 +26,5 @@ const NewNavbar = () => {
 }
 
 export default NewNavbar
+
+// fixed top-0 right-0 left-0 backdrop-filter backdrop-blur-[10px] bg-transparent
