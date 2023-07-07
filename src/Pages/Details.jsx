@@ -42,10 +42,10 @@ const Details = () => {
                                 </div>
                             ))}
                         </div>
-                        <div>
+                        {/* <div>
                             <span className='text-gray-500 font-bold cursor-pointer'>Original Title :- </span>{moviedetail.original_title}<br/>
                             <span className='text-gray-500 font-bold cursor-pointer'>Popularity : -</span>{moviedetail.original_title}
-                        </div>
+                        </div> */}
                         <div className='flex items-center justify-between my-2'>
                             <h3 className='text-[#A6F700]'>Ratings:{moviedetail?.vote_average}</h3>
                             <h3 className='text-[#e50914] border-white border-[1px] px-2'>{moviedetail?.status}</h3>
