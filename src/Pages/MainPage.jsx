@@ -116,7 +116,7 @@ const MainPage = () => {
       </div>
       </div>
       </Link>
-      <Link to="/popularmovies">
+      
       <div className='px-2'>
         <h2 className='text-white font-bold md:text-3xl text-2xl py-3'>
           Popular Movies
@@ -139,10 +139,10 @@ const MainPage = () => {
 </div>
 
       </div>
-      </Link>
+      
 
 
-      <Link to="/popularmovies">
+      
       <div className='px-2'>
         <h2 className='text-white font-bold md:text-3xl text-2xl py-3'>
           Top Rated Movies
@@ -165,10 +165,10 @@ const MainPage = () => {
 </div>
 
       </div>
-      </Link>
+      
 
 
-      <Link to="/popularmovies">
+      
       <div className='px-2'>
         <h2 className='text-white font-bold md:text-3xl text-2xl py-3'>
           Now Playing
@@ -191,10 +191,10 @@ const MainPage = () => {
 </div>
 
       </div>
-      </Link>
+      
 
 
-      <Link to="/popularmovies">
+      
       <div className='px-2'>
         <h2 className='text-white font-bold md:text-3xl text-2xl py-3'>
           Upcoming Movies
@@ -217,7 +217,7 @@ const MainPage = () => {
 </div>
 
       </div>
-      </Link>
+      
 
 
       {/* <Link to="/popularmovies">
